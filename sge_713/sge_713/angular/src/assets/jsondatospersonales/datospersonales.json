@@ -1,0 +1,20 @@
+{
+    "datosPersonales":[
+            {
+                "id": 1 ,
+                "nombre": "Juan",
+                "apellido": "Perez",
+                "DNI": "12345678",
+                "CUIL": "20-12345678-9",
+                "nroTel": "555-1234"
+            },
+            {
+                "id": 2 ,
+                "nombre": "María",
+                "apellido": "López",
+                "DNI": "87654321",
+                "CUIL": "20-87654321-0",
+                "nroTel": "555-5678"
+            }
+        ]
+}

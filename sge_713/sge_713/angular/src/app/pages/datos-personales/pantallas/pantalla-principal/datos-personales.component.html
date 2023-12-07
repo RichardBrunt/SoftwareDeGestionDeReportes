@@ -1,0 +1,66 @@
+<h1>Sistema de Gestión de Alumnos</h1>
+<!-- Tabla de datos de alumnos -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>CUIL</th>
+                <th>Teléfono</th>
+                <th>Carrera</th>
+                <th>Legajo</th>
+                <th>Fecha de Ingreso</th>
+                <th>Libro de Matriz</th>
+                <th>Fecha de Egreso</th>
+                <th>Localidad</th>
+                <th>Domicilio</th>
+                <th>ID Tutor</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ejemplo de datos de alumnos -->
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>12345678</td>
+                <td>20-12345678-9</td>
+                <td>555-1234</td>
+                <td>Ciencias</td>
+                <td>78901</td>
+                <td>2023-01-15</td>
+                <td>12345</td>
+                <td>2023-12-20</td>
+                <td>Buenos Aires</td>
+                <td>Calle 123</td>
+                <td *ngFor="let item of datostutor">{{datostutor.id}}</td>
+                <td><button class="editar-alumno">Editar</button></td>
+                <td><button class="eliminar-alumno">Eliminar</button></td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>López</td>
+                <td>87654321</td>
+                <td>20-87654321-0</td>
+                <td>555-5678</td>
+                <td>Artes</td>
+                <td>89012</td>
+                <td>2022-09-10</td>
+                <td>54321</td>
+                <td>2023-11-15</td>
+                <td>Córdoba</td>
+                <td>Avenida 456</td>
+                <td *ngFor="let item of datostutor">{{datostutor.id}}</td>
+                <td><button class="editar-alumno">Editar</button></td>
+                <td><button class="eliminar-alumno">Eliminar</button></td>
+            </tr>
+            <!-- Puedes agregar más filas aquí -->
+        </tbody>
+    </table>
+
+    
+    <div class="container">
+        <button [routerLink]="['/dashboard/MostrarFormulariosDatosPersonales']">Agregar Alumno</button>
+      </div>
